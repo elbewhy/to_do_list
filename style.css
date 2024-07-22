@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between elements as needed */
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], button#add-task {
+    height: 40px; /* Set the same height for all elements */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+input[type="text"], input[type="date"] {
+    flex: 1;
+    border-right: none; /* Remove right border for inputs */
+}
+
+input[type="date"] {
+    border-left: none; /* Remove left border for date input */
+}
+
+button#add-task {
+    padding: 0 15px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-left: none; /* Remove left border for button */
+}
+
+button#add-task:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+    opacity: 0.5;
+}
+
+li button {
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
